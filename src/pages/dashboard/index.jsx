@@ -55,7 +55,27 @@ const Dashboard = () => {
               fontSize: fs,
             }}
           >
-            {!statData ? "...loading" : statData.users}
+            {!statData ? "...loading" : statData.running}
+          </Typography>
+        </Box>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            gap: "1rem",
+          }}
+        >
+          <Label label="عدد المزادات المنتهية " />
+          <Typography
+            padding="10px 60px"
+            sx={{
+              background: colors.primary[700],
+              borderRadius: "8px",
+              fontSize: fs,
+            }}
+          >
+            {!statData ? "...loading" : statData.finshed}
           </Typography>
         </Box>
         <Box
@@ -86,7 +106,7 @@ const Dashboard = () => {
             gap: "1rem",
           }}
         >
-          <Label label="عدد المزادات المنتهية" />
+          <Label label="عدد المستخدمين" />
           <Typography
             padding="10px 60px"
             sx={{
@@ -95,27 +115,7 @@ const Dashboard = () => {
               fontSize: fs,
             }}
           >
-            {!statData ? "...loading" : statData.finshed}
-          </Typography>
-        </Box>
-        <Box
-          sx={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            gap: "1rem",
-          }}
-        >
-          <Label label="عدد المزادات النشطة" />
-          <Typography
-            padding="10px 60px"
-            sx={{
-              background: colors.primary[700],
-              borderRadius: "8px",
-              fontSize: fs,
-            }}
-          >
-            {!statData ? "...loading" : statData.running}
+            {!statData ? "...loading" : statData.users}
           </Typography>
         </Box>
       </Box>
