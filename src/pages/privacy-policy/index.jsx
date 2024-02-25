@@ -63,7 +63,7 @@ const Privacy = () => {
 
   return (
     <Box>
-      <Header title="Terms and Conditions" />
+      <Header title="privacy policy" />
       <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
         <TextField
           id="outlined-multiline-static"
