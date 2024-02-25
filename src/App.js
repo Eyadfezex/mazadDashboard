@@ -10,6 +10,7 @@ import AuctionFees from "./pages/Auction-fees/index.jsx";
 import CitiesCountries from "./pages/Cities-countries/index.jsx";
 import Login from "./pages/sign_in/Login.jsx";
 import TermsConditions from "./pages/terms-&-Conditions/index.jsx";
+import Privacy from "./pages/privacy-policy/index.jsx";
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -44,7 +45,8 @@ function App() {
                 <Route path="/pointsCalc" element={<PointsCalc />} />
                 <Route path="/AuctionFees" element={<AuctionFees />} />
                 <Route path="/CitiesCountries" element={<CitiesCountries />} />
-                <Route path="/faq" element={<TermsConditions />} />
+                <Route path="/terms" element={<TermsConditions />} />
+                <Route path="/privacy" element={<Privacy />} />
               </Routes>
             </div>
           </main>
