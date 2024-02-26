@@ -62,14 +62,14 @@ const Privacy = () => {
   }, []); // Empty dependency array to run the effect only once
 
   return (
-    <Box>
+    <Box sx={{ width: "50%", marginRight: "3%" }}>
       <Header title="privacy policy" />
       <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
         <TextField
           id="outlined-multiline-static"
           multiline
-          rows={10}
-          value={state.text} // Access state.text.text here
+          rows={20}
+          value={!state.text ? "loading..." : state.text} // Access state.text.text here
           onChange={handleInputChange}
           variant="outlined"
           fullWidth
