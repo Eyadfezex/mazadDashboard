@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Label from "../../components/labels/Label.tsx";
 import { Box, Typography, useTheme } from "@mui/material";
-import Header from "../../components/Header";
+import Header from "../../components/header/Header.jsx";
 import { tokens } from "../../theme";
 import instance from "../../api/Axios";
 const Dashboard = () => {

@@ -1,6 +1,6 @@
 import React, { useReducer, useEffect, useState } from "react";
 import { Box, TextField } from "@mui/material";
-import Header from "../../components/Header";
+import Header from "../../components/header/Header.jsx";
 import Button from "../../components/button/Button.tsx";
 import instance from "../../api/Axios.js";
 

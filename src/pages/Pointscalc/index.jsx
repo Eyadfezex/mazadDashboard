@@ -2,7 +2,7 @@ import React from "react";
 import Label from "../../components/labels/Label.tsx";
 import TextField from "@mui/material/TextField";
 import { Box, useTheme } from "@mui/material";
-import Header from "../../components/Header";
+import Header from "../../components/header/Header.jsx";
 import { tokens } from "../../theme";
 
 const PointsCalc = () => {

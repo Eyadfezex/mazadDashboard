@@ -3,7 +3,7 @@ import instance from "../../api/Axios";
 import Button from "../../components/button/Button.tsx";
 import Label from "../../components/labels/Label.tsx";
 import { Box, TextField, useTheme } from "@mui/material";
-import Header from "../../components/Header";
+import Header from "../../components/header/Header.jsx";
 import { tokens } from "../../theme";
 
 const ActionTypes = {
